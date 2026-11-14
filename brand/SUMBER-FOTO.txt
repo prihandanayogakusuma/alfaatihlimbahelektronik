@@ -1,0 +1,24 @@
+Sumber foto slider (public/hero/) — semuanya dari Wikimedia Commons,
+berlisensi CC0 / Public Domain (bebas dipakai komersial, tanpa wajib atribusi).
+
+komponen-pcb         : File:Elektronikschrott-01.jpg
+pemilahan-ewaste     : File:July 20, 2011 - What is e-waste? (5958967718).jpg  (US EPA, Public Domain)
+penghancuran-data    : File:01b-hard-drive-cover-removed.JPG
+server-data-center   : File:Technician with laptop working on server rack at NERSC.jpg  (Public Domain)
+daur-ulang-komponen  : File:Computer Motherboard Closeup.jpg
+komputer-kantor      : File:Computer-motherboard-pc-wires (23698613303).jpg
+
+Saran: ganti dengan foto asli gudang, armada, dan tim PT Al Faatih
+agar lebih dipercaya calon klien.
+
+----------------------------------------------------------------
+Foto kategori (public/kategori/) — Wikimedia Commons, CC0 / Public Domain.
+
+komputer-laptop       : File:Laptop in close-up (Unsplash).jpg
+server-storage        : File:UPS Power Management Module, racks with network cabling in NERSC data center.jpg
+perangkat-jaringan    : File:EthernetSwitch.jpg
+ups-baterai           : File:Pallet of scrap lead-acid automotive batteries (wide view).jpg
+printer-mesin-kantor  : File:The Closest Photocopier (3594209596).jpg
+monitor-display       : File:Code on computer monitor (Unsplash).jpg
+komponen-pcb          : File:Elektronikschrott-01.jpg
+kabel-industri        : File:Enamelled litz copper wire.JPG

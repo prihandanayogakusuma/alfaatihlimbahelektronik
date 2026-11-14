@@ -1,0 +1,184 @@
+[
+  {
+    "id": "penjemputan/whatsapp-image-2026-11-13-at-231941-1",
+    "kategori": "penjemputan",
+    "src": "/galeri/penjemputan/whatsapp-image-2026-11-13-at-231941-1.webp",
+    "thumb": "/galeri/penjemputan/whatsapp-image-2026-11-13-at-231941-1-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "Pengangkutan barang bekas IT",
+    "keterangan": "PC, printer & perangkat kantor siap diangkut",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "samarkan": [
+      {
+        "x": 0.42,
+        "y": 0.66,
+        "w": 0.36,
+        "h": 0.085
+      },
+      {
+        "x": 0.28,
+        "y": 0.405,
+        "w": 0.46,
+        "h": 0.09
+      }
+    ],
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":[{\"x\":0.42,\"y\":0.66,\"w\":0.36,\"h\":0.085},{\"x\":0.28,\"y\":0.405,\"w\":0.46,\"h\":0.09}]}"
+  },
+  {
+    "id": "penjemputan/whatsapp-image-2026-11-13-at-231949-1",
+    "kategori": "penjemputan",
+    "src": "/galeri/penjemputan/whatsapp-image-2026-11-13-at-231949-1.webp",
+    "thumb": "/galeri/penjemputan/whatsapp-image-2026-11-13-at-231949-1-thumb.webp",
+    "width": 1170,
+    "height": 853,
+    "judul": "Proses muat barang ke armada",
+    "keterangan": "Penjemputan langsung dari lokasi klien",
+    "potong": {
+      "bawah": 0.42
+    },
+    "samarkan": [
+      {
+        "x": 0.68,
+        "y": 0.25,
+        "w": 0.12,
+        "h": 0.055
+      }
+    ],
+    "_opsi": "{\"potong\":{\"bawah\":0.42},\"samarkan\":[{\"x\":0.68,\"y\":0.25,\"w\":0.12,\"h\":0.055}]}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231938",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231938.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231938-thumb.webp",
+    "width": 1170,
+    "height": 1128,
+    "judul": "PC desktop bekas kantor",
+    "keterangan": "Tumpukan unit CPU",
+    "_opsi": "{\"potong\":null,\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231940",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231940.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231940-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "Perangkat jaringan",
+    "keterangan": "Switch & router bekas",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231941",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231941.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231941-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "Switch & perangkat rack",
+    "keterangan": "Perangkat jaringan dan data center",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231943",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231943.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231943-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "Monitor & PC all-in-one",
+    "keterangan": "Beserta kabel dan aksesoris",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231945-1",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231945-1.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231945-1-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "PC tower bekas kantor",
+    "keterangan": "",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231945",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231945.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231945-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "Laptop & monitor bekas",
+    "keterangan": "",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231946",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231946.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231946-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "PC desktop bekas",
+    "keterangan": "",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231948",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231948.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231948-thumb.webp",
+    "width": 739,
+    "height": 1344,
+    "judul": "Printer & CPU bekas",
+    "keterangan": "Perangkat kantor campuran",
+    "potong": {
+      "atas": 0.055,
+      "bawah": 0.105
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.055,\"bawah\":0.105},\"samarkan\":null}"
+  },
+  {
+    "id": "pembelian/whatsapp-image-2026-11-13-at-231949",
+    "kategori": "pembelian",
+    "src": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231949.webp",
+    "thumb": "/galeri/pembelian/whatsapp-image-2026-11-13-at-231949-thumb.webp",
+    "width": 739,
+    "height": 544,
+    "judul": "Laptop bekas",
+    "keterangan": "Tersusun rapi dalam boks",
+    "potong": {
+      "atas": 0.28,
+      "bawah": 0.38
+    },
+    "_opsi": "{\"potong\":{\"atas\":0.28,\"bawah\":0.38},\"samarkan\":null}"
+  }
+]

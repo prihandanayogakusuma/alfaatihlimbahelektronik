@@ -1,0 +1,17 @@
+# Dependensi & hasil build (dibuat ulang otomatis)
+node_modules/
+.next/
+.next-dev/
+out/
+
+# Foto ASLI galeri tidak diunggah (bisa berisi plat nomor / nama klien yang belum disamarkan).
+# Versi web yang sudah disamarkan ada di public/galeri/ dan tetap diunggah.
+foto-galeri/penjemputan/*
+foto-galeri/pembelian/*
+!foto-galeri/**/.gitkeep
+
+# Lain-lain
+.env*
+*.log
+.DS_Store
+Thumbs.db

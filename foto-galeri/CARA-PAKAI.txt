@@ -1,0 +1,27 @@
+CARA MENAMBAH FOTO GALERI
+=========================
+
+1. Salin foto asli (langsung dari HP / WhatsApp / Instagram) ke folder:
+     foto-galeri/penjemputan/   -> foto saat menjemput barang
+     foto-galeri/pembelian/     -> foto barang yang dibeli / ditimbang / serah terima
+
+   Format: JPG, PNG, WEBP, atau HEIC (iPhone). Ukuran bebas.
+   Tips: beri nama file yang jelas, mis. "2026-11-penjemputan-pt-abc-bekasi.jpg"
+
+2. Buka terminal di folder proyek, jalankan:
+     npm run galeri
+
+   Foto otomatis: diputar sesuai orientasi, dikecilkan, diubah ke WebP,
+   dibuat thumbnail, dan DATA LOKASI GPS DIHAPUS (aman untuk privasi).
+
+3. (Opsional) Buka data/galeri.json dan isi "judul" & "keterangan" tiap foto, contoh:
+     "judul": "Penjemputan 40 unit PC",
+     "keterangan": "Perusahaan manufaktur, Cikarang"
+
+4. Lihat hasilnya: npm run dev  ->  http://localhost:3000/#galeri
+   Siap online: npm run build  ->  upload isi folder out/
+
+Menghapus foto: hapus file dari folder ini, lalu jalankan lagi npm run galeri.
+
+PENTING: Jika di foto terlihat logo/nama perusahaan klien, wajah orang,
+atau plat nomor, minta izin klien dulu atau samarkan bagian tersebut.
