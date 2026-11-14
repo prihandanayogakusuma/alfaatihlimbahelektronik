@@ -38,7 +38,7 @@ export default function Header() {
     <>
       <div className="topbar">
         <div className="container topbar__inner">
-          <span>Melayani perusahaan di seluruh Jabodetabek</span>
+          <span>Melayani perusahaan di seluruh Indonesia</span>
           <div className="topbar__links">
             <a href={`tel:${company.phoneTel}`}>{company.phoneDisplay}</a>
             <a href={`mailto:${company.email}`}>{company.email}</a>

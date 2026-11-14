@@ -14,7 +14,7 @@ export default function Hero() {
           <p className="hero__lead">
             Gudang penuh komputer, server, dan perangkat kantor yang tak lagi terpakai? Jadikan
             <strong> nilai, bukan beban.</strong> {company.name} menaksir aset Anda secara adil dan
-            menjemputnya langsung ke lokasi di seluruh Jabodetabek — lengkap dengan berita acara resmi.
+            menjemputnya langsung ke lokasi Anda di seluruh Indonesia — lengkap dengan berita acara resmi.
           </p>
           <div className="hero__actions">
             <a href="#kontak" className="btn btn--gold">Konsultasi Gratis</a>

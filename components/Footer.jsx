@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
 
       <div className="container footer__seo">
-        <h4>Area Layanan Penjemputan — {serviceRegion}</h4>
+        <h4>Area Layanan — {serviceRegion}</h4>
         <p>{serviceAreas.join(' · ')}</p>
       </div>
 

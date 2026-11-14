@@ -121,7 +121,7 @@ export const reasons = [
   { title: 'Transparan', text: 'Penilaian dan penawaran disampaikan secara terbuka, tertulis, dan mudah dipahami.' },
   { title: 'Keamanan Data', text: 'Kerahasiaan informasi perusahaan Anda adalah prioritas kami, bukan sekadar janji.' },
   { title: 'Respons Cepat', text: 'Pertanyaan Anda dijawab pada hari yang sama; penjemputan dijadwalkan secepatnya.' },
-  { title: 'Menjangkau Jabodetabek', text: 'Berbasis di Tangerang Selatan, kami menjemput ke Jakarta, Bogor, Depok, Tangerang, dan Bekasi.' },
+  { title: 'Jangkauan Nasional', text: 'Berkantor pusat di Tangerang Selatan, kami melayani perusahaan di seluruh Indonesia.' },
   { title: 'Pembayaran Tepat Waktu', text: 'Untuk aset bernilai, pembayaran dilakukan segera setelah kesepakatan tercapai.' },
   { title: 'Siap Audit', text: 'Dokumentasi lengkap mendukung kepatuhan, akuntansi aset, dan laporan keberlanjutan.' },
   { title: 'Ramah Lingkungan', text: 'Material didaur ulang secara maksimal, limbah berbahaya ditangani secara terpisah.' },
@@ -151,7 +151,7 @@ export const faqs = [
   },
   {
     q: 'Wilayah mana saja yang dilayani?',
-    a: 'Kami melayani penjemputan limbah elektronik di seluruh Jabodetabek — Jakarta, Bogor, Depok, Tangerang, Tangerang Selatan, dan Bekasi. Kantor dan gudang kami berada di Ciputat, Tangerang Selatan.',
+    a: 'Kami melayani perusahaan di seluruh Indonesia — mulai dari Jabodetabek, Jawa, dan Bali hingga Sumatera, Kalimantan, Sulawesi, serta Indonesia Timur. Kantor pusat dan gudang kami berada di Ciputat, Tangerang Selatan; jadwal penjemputan disesuaikan dengan lokasi Anda.',
   },
   {
     q: 'Bagaimana keamanan data pada hard disk dan perangkat penyimpanan?',
@@ -167,19 +167,19 @@ export const faqs = [
   },
 ];
 
-// Wilayah layanan penjemputan (sesuai konfirmasi: Jabodetabek)
-export const serviceRegion = 'Jabodetabek';
+// Wilayah layanan (sesuai konfirmasi: seluruh Indonesia; kantor pusat di Tangerang Selatan)
+export const serviceRegion = 'Seluruh Indonesia';
 export const serviceAreas = [
-  'Jakarta Pusat',
-  'Jakarta Selatan',
-  'Jakarta Barat',
-  'Jakarta Timur',
-  'Jakarta Utara',
-  'Bogor',
-  'Depok',
-  'Tangerang',
-  'Tangerang Selatan',
-  'Bekasi',
+  'Jabodetabek',
+  'Banten',
+  'Jawa Barat',
+  'Jawa Tengah & DI Yogyakarta',
+  'Jawa Timur',
+  'Bali & Nusa Tenggara',
+  'Sumatera',
+  'Kalimantan',
+  'Sulawesi',
+  'Maluku & Papua',
 ];
 
 // Gambar slider di tampilan utama (file ada di public/hero/<src>-1920.webp & -960.webp).

@@ -1,13 +1,13 @@
 import { Fraunces, Plus_Jakarta_Sans } from 'next/font/google';
-import { company, services, faqs, maps, serviceAreas, instagramUrl } from '@/data/site';
+import { company, services, faqs, maps, instagramUrl } from '@/data/site';
 import './globals.css';
 
 const serif = Fraunces({ subsets: ['latin'], weight: ['500', '600'], style: ['normal', 'italic'], variable: '--font-serif', display: 'swap' });
 const sans = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-sans', display: 'swap' });
 
-const title = 'Jasa Limbah Elektronik Perusahaan Jabodetabek | Al Faatih';
+const title = 'Jasa Limbah Elektronik Perusahaan se-Indonesia | Al Faatih';
 const description =
-  'Terima limbah elektronik & aset IT bekas perusahaan se-Jabodetabek: komputer, laptop, server, UPS, printer. Dijemput ke lokasi, dinilai adil, ada berita acara.';
+  'Terima limbah elektronik & aset IT bekas perusahaan seluruh Indonesia: komputer, laptop, server, UPS, printer. Dijemput ke lokasi, dinilai adil, ada berita acara.';
 
 // ========== SEO: meta tag, Open Graph, Twitter ==========
 export const metadata = {
@@ -73,7 +73,7 @@ const jsonLd = [
       postalCode: company.address.postalCode,
       addressCountry: 'ID',
     },
-    areaServed: serviceAreas.map((name) => ({ '@type': 'City', name })),
+    areaServed: { '@type': 'Country', name: 'Indonesia' },
     openingHoursSpecification: [{
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
