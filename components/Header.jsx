@@ -15,7 +15,7 @@ export default function Header() {
 
     // Tandai menu aktif sesuai bagian yang sedang dilihat
     const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => e.isIntersecting && setActive('#' + e.target.id)),
+      (entries) => entries.forEach((e) => e.isIntersecting && setActive('/#' + e.target.id)),
       { rootMargin: '-45% 0px -50% 0px' }
     );
     document.querySelectorAll('main section[id]').forEach((s) => io.observe(s));
@@ -49,7 +49,7 @@ export default function Header() {
 
       <header className={`header${scrolled ? ' is-scrolled' : ''}`}>
         <div className="container header__inner">
-          <a href="#beranda" className="brand" aria-label={`${company.name} — Beranda`}>
+          <a href="/" className="brand" aria-label={`${company.name} — Beranda`}>
             <img src="/logo-192.png" alt={`Logo ${company.name}`} className="brand__logo" width="190" height="192" />
             <span className="brand__text">
               <strong>{company.shortName}</strong>

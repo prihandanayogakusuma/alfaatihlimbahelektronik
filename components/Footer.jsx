@@ -1,4 +1,5 @@
-import { company, fullAddress, navLinks, categories, serviceAreas, serviceRegion, instagramUrl } from '@/data/site';
+import { company, fullAddress, navLinks, serviceAreas, serviceRegion, instagramUrl } from '@/data/site';
+import { halaman } from '@/data/halaman';
 import { Icon } from './Icons';
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div>
-          <a href="#beranda" className="brand brand--light">
+          <a href="/" className="brand brand--light">
             <img src="/logo-192.png" alt={`Logo ${company.name}`} className="brand__logo" width="190" height="192" loading="lazy" />
             <span className="brand__text"><strong>{company.shortName}</strong><small>{company.tagline}</small></span>
           </a>
@@ -22,9 +23,9 @@ export default function Footer() {
           <a href="#kontak">Kontak</a>
         </nav>
 
-        <nav aria-label="Kategori">
-          <h4>Kategori</h4>
-          {categories.slice(0, 5).map((c) => <a key={c.title} href="#kategori">{c.title}</a>)}
+        <nav aria-label="Layanan dan informasi">
+          <h4>Layanan &amp; Info</h4>
+          {halaman.map((h) => <a key={h.slug} href={`/${h.slug}/`}>{h.h1}</a>)}
         </nav>
 
         <div>

@@ -7,7 +7,7 @@ export const company = {
   name: 'PT Al Faatih Limbah Elektronik',
   shortName: 'AL FAATIH',
   tagline: 'Limbah Elektronik',
-  url: 'https://alfaatih-limbahelektronik.vercel.app', // GANTI jika sudah punya domain sendiri (mis. .co.id)
+  url: 'https://www.alfaatih.com', // domain resmi (alfaatih.com tanpa www otomatis dialihkan ke sini)
   phoneDisplay: '0812-2222-7472',
   phoneTel: '+6281222227472',
   whatsapp: '6281222227472', // format internasional, tanpa + (untuk link wa.me)
@@ -40,12 +40,12 @@ export const waLink = (text) =>
 
 // Menu "Galeri" otomatis muncul jika sudah ada foto di data/galeri.json
 export const navLinks = [
-  { href: '#tentang', label: 'Tentang Kami' },
-  { href: '#layanan', label: 'Layanan' },
-  { href: '#kategori', label: 'Yang Kami Terima' },
-  { href: '#proses', label: 'Proses' },
-  ...(galeri.length ? [{ href: '#galeri', label: 'Galeri' }] : []),
-  { href: '#faq', label: 'FAQ' },
+  { href: '/#tentang', label: 'Tentang Kami' },
+  { href: '/#layanan', label: 'Layanan' },
+  { href: '/#kategori', label: 'Yang Kami Terima' },
+  { href: '/#proses', label: 'Proses' },
+  ...(galeri.length ? [{ href: '/#galeri', label: 'Galeri' }] : []),
+  { href: '/#faq', label: 'FAQ' },
 ];
 
 // GANTI dengan angka sebenarnya

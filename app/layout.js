@@ -1,13 +1,13 @@
 import { Fraunces, Plus_Jakarta_Sans } from 'next/font/google';
-import { company, services, faqs, maps, instagramUrl } from '@/data/site';
+import { company, services, maps, instagramUrl } from '@/data/site';
 import './globals.css';
 
 const serif = Fraunces({ subsets: ['latin'], weight: ['500', '600'], style: ['normal', 'italic'], variable: '--font-serif', display: 'swap' });
 const sans = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-sans', display: 'swap' });
 
-const title = 'Jasa Limbah Elektronik Perusahaan se-Indonesia | Al Faatih';
+const title = 'Jasa Limbah Elektronik Jabodetabek & se-Indonesia | Al Faatih';
 const description =
-  'Terima limbah elektronik & aset IT bekas perusahaan seluruh Indonesia: komputer, laptop, server, UPS, printer. Dijemput ke lokasi, dinilai adil, ada berita acara.';
+  'Terima limbah elektronik & aset IT bekas perusahaan seluruh Indonesia: komputer, laptop, server, UPS, printer. Dijemput ke lokasi, dinilai adil, berita acara.';
 
 // ========== SEO: meta tag, Open Graph, Twitter ==========
 export const metadata = {
@@ -88,15 +88,7 @@ const jsonLd = [
       itemListElement: services.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.title } })),
     },
   },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  },
+  // FAQPage beranda dipasang di app/page.js (bukan di sini) agar tidak dobel di halaman lain
 ];
 
 export default function RootLayout({ children }) {

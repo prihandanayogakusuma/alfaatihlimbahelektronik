@@ -6,6 +6,7 @@ import Services from '@/components/Services';
 import Categories from '@/components/Categories';
 import Process from '@/components/Process';
 import Gallery from '@/components/Gallery';
+import SeoLinks from '@/components/SeoLinks';
 import WhyUs from '@/components/WhyUs';
 import Industries from '@/components/Industries';
 import Faq from '@/components/Faq';
@@ -14,10 +15,18 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Reveal from '@/components/Reveal';
+import { faqs } from '@/data/site';
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
 
 export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <a className="skip-link" href="#main">Langsung ke konten</a>
       <Header />
       <main id="main">
@@ -28,6 +37,7 @@ export default function Home() {
         <Categories />
         <Process />
         <Gallery />
+        <SeoLinks />
         <WhyUs />
         <Industries />
         <Faq />
