@@ -20,6 +20,9 @@ export const metadata = {
     'penghancuran data', 'pemusnahan hard disk', 'limbah B3 elektronik', company.name,
   ],
   authors: [{ name: company.name }],
+  // iPhone Safari otomatis mengubah nomor/email/alamat jadi link -> bikin error hydration.
+  // Nomor & email di website ini sudah berupa link, jadi deteksi otomatis dimatikan.
+  formatDetection: { telephone: false, email: false, address: false },
   alternates: { canonical: '/' },
   robots: { index: true, follow: true, 'max-image-preview': 'large' },
   openGraph: {

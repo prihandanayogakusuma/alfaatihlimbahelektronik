@@ -636,3 +636,127 @@ body { -webkit-tap-highlight-color: rgba(44, 84, 60, .15); }
 body.menu-open .wa-float { opacity: 0; pointer-events: none; }
 .wa-float { transition: transform .25s, opacity .2s; }
 @media (max-width: 640px) { .hero__inner { padding-top: 56px; } }
+
+/* ==========================================================
+   ANIMASI
+   ========================================================== */
+:root { --ease-out: cubic-bezier(.2, .65, .3, 1); }
+
+/* --- Muncul saat digulir (dipasang oleh components/Reveal.jsx) --- */
+.reveal {
+  opacity: 0;
+  transition: opacity .8s var(--ease-out) var(--d, 0s), transform .8s var(--ease-out) var(--d, 0s);
+  will-change: opacity, transform;
+}
+.reveal.r-up { transform: translateY(40px); }
+.reveal.r-left { transform: translateX(-56px); }
+.reveal.r-right { transform: translateX(56px); }
+.reveal.r-zoom { transform: translateY(30px) scale(.94); }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Garis emas di atas judul bagian memanjang saat muncul */
+@keyframes lineGrow { from { width: 0; } to { width: 28px; } }
+.section__head.is-visible .eyebrow::before { animation: lineGrow .7s var(--ease-out) .25s both; }
+
+/* --- Animasi pembuka (langsung saat halaman dibuka, tanpa menunggu JS) --- */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+@keyframes fadeLeft { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: none; } }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-100%); } to { opacity: 1; transform: none; } }
+
+.header { animation: slideDown .7s var(--ease-out) both; }
+.hero__content > * { animation: fadeUp .9s var(--ease-out) both; }
+.hero__content > :nth-child(1) { animation-delay: .15s; }
+.hero__content > :nth-child(2) { animation-delay: .3s; }
+.hero__content > :nth-child(3) { animation-delay: .45s; }
+.hero__content > :nth-child(4) { animation-delay: .6s; }
+.hero__content > :nth-child(5) { animation-delay: .75s; }
+.hero__card { animation: fadeLeft 1s var(--ease-out) .55s both; }
+.hero__steps li { animation: fadeUp .6s var(--ease-out) both; }
+.hero__steps li:nth-child(1) { animation-delay: .8s; }
+.hero__steps li:nth-child(2) { animation-delay: .9s; }
+.hero__steps li:nth-child(3) { animation-delay: 1s; }
+.hero__steps li:nth-child(4) { animation-delay: 1.1s; }
+.hero__steps li:nth-child(5) { animation-delay: 1.2s; }
+.hero__controls { animation: fadeUp .8s var(--ease-out) 1s both; }
+.stats__grid { animation: fadeUp .9s var(--ease-out) .9s both; }
+
+/* --- Tombol emas berkilau saat disorot --- */
+.btn--gold { position: relative; overflow: hidden; isolation: isolate; }
+.btn--gold::after {
+  content: ""; position: absolute; top: 0; bottom: 0; left: -75%; width: 50%; z-index: -1;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent);
+  transform: skewX(-20deg); transition: left .7s ease;
+}
+.btn--gold:hover::after { left: 125%; }
+
+/* --- Tombol WhatsApp berdenyut lembut --- */
+@keyframes waPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, .55); }
+  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.wa-float { animation: waPulse 2.4s ease-out 2s infinite; }
+
+/* --- Logo di bagian Tentang Kami melayang perlahan --- */
+@keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+.about__art { animation: floatY 6s ease-in-out infinite; }
+
+/* --- Panah antar langkah proses bergerak --- */
+@keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(5px); } }
+.step:not(:last-child)::after { animation: nudge 1.8s ease-in-out infinite; }
+
+/* --- Ikon layanan berputar sedikit saat disorot --- */
+.service__icon { transition: background .3s, transform .4s var(--ease-out); }
+.service:hover .service__icon { transform: rotate(-8deg) scale(1.08); }
+
+/* --- Hormati pengguna yang mematikan animasi (aksesibilitas) --- */
+@media (prefers-reduced-motion: reduce) {
+  .header, .hero__content > *, .hero__card, .hero__steps li, .hero__controls, .stats__grid,
+  .wa-float, .about__art, .step::after { animation: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .btn--gold::after { display: none; }
+}
+@keyframes waPulse {
+  0% { box-shadow: 0 10px 25px -6px rgba(37,211,102,.6), 0 0 0 0 rgba(37,211,102,.5); }
+  70% { box-shadow: 0 10px 25px -6px rgba(37,211,102,.6), 0 0 0 16px rgba(37,211,102,0); }
+  100% { box-shadow: 0 10px 25px -6px rgba(37,211,102,.6), 0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* ==========================================================
+   PENGAMAN LEBAR LAYAR (iPhone Safari mengabaikan overflow-x di body)
+   ========================================================== */
+html, body { max-width: 100%; overflow-x: clip; }
+main, .footer, .topbar { overflow-x: clip; }
+@supports not (overflow-x: clip) {
+  main, .footer, .topbar { overflow-x: hidden; }
+}
+
+/* HP & tablet: animasi masuk dari bawah (bukan dari samping) agar tidak melebarkan halaman */
+@media (max-width: 920px) {
+  .reveal.r-left, .reveal.r-right { transform: translateY(40px); }
+  .hero__card { animation-name: fadeUp; }
+}
+
+/* ---------- Tentang Kami: teks rata kiri-kanan (justify) ---------- */
+.about__text > p,
+.vm__item p,
+.vm__item li {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;          /* pemenggalan kata otomatis agar spasi antar kata tidak renggang */
+  overflow-wrap: break-word;
+}
+.about__text > p { line-height: 1.8; }
+.vm__item ul { padding-left: 20px; }
+/* Visi & Misi bersusun penuh agar baris cukup panjang untuk rata kiri-kanan */
+.vm { grid-template-columns: 1fr; gap: 16px; }
+.vm__item { display: grid; grid-template-columns: 90px 1fr; gap: 6px 20px; align-items: start; padding: 22px 24px; }
+.vm__item h3 { margin: 0; padding-top: 2px; }
+@media (max-width: 640px) {
+  .vm__item { grid-template-columns: 1fr; padding: 20px; }
+  /* layar sangat sempit: kotak visi/misi rata kiri agar tidak ada celah lebar antar kata */
+  .vm__item p, .vm__item li { text-align: left; }
+}
+/* Poin-poin Misi (kalimat pendek) rata kiri — standar untuk daftar berpoin */
+.vm__item li { text-align: left; }

@@ -11,5 +11,7 @@ export default function nextConfig(phase) {
     // `npm run dev` memakai folder kerja sendiri (.next-dev), sehingga
     // `npm run build` bisa dijalankan saat dev masih menyala tanpa saling merusak.
     ...(phase === PHASE_DEVELOPMENT_SERVER ? { distDir: '.next-dev' } : {}),
+    // Izinkan membuka mode dev dari HP di jaringan Wi-Fi yang sama (mis. http://172.20.10.8:3000)
+    allowedDevOrigins: ['172.20.10.8', '192.168.*.*', '10.*.*.*', '172.*.*.*'],
   };
 }
