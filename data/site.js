@@ -7,7 +7,7 @@ export const company = {
   name: 'PT Al Faatih Limbah Elektronik',
   shortName: 'AL FAATIH',
   tagline: 'Limbah Elektronik',
-  url: 'https://www.alfaatihlimbahelektronik.co.id', // GANTI dengan domain asli
+  url: 'https://alfaatih-limbahelektronik.vercel.app', // GANTI jika sudah punya domain sendiri (mis. .co.id)
   phoneDisplay: '0812-2222-7472',
   phoneTel: '+6281222227472',
   whatsapp: '6281222227472', // format internasional, tanpa + (untuk link wa.me)
