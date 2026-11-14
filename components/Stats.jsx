@@ -32,7 +32,7 @@ function Counter({ value, suffix }) {
     return () => { io.disconnect(); cancelAnimationFrame(raf); };
   }, [value, suffix]);
 
-  return <strong ref={ref}>{display}</strong>;
+  return <strong ref={ref} suppressHydrationWarning>{display}</strong>;
 }
 
 export default function Stats() {

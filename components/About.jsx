@@ -1,4 +1,4 @@
-import { company } from '@/data/site';
+import { company, tahunBerdiri } from '@/data/site';
 
 export default function About() {
   return (
@@ -31,7 +31,8 @@ export default function About() {
             memastikan keduanya tertangani dengan tepat.
           </p>
           <p>
-            Kami adalah mitra penerima limbah elektronik bagi perusahaan, instansi, dan institusi pendidikan.
+            Berdiri sejak {tahunBerdiri}, kami adalah mitra penerima limbah elektronik bagi perusahaan, instansi,
+            dan institusi pendidikan.
             Dengan proses yang tertata, penilaian yang jujur, serta dokumentasi yang siap diaudit, kami membantu
             Anda melepas aset lama dengan tenang — tanpa risiko kebocoran data, tanpa beban logistik, dan tanpa
             meninggalkan jejak buruk bagi bumi.

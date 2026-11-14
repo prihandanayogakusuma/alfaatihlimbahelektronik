@@ -1,5 +1,5 @@
 import { Fraunces, Plus_Jakarta_Sans } from 'next/font/google';
-import { company, services, maps, instagramUrl } from '@/data/site';
+import { company, services, maps, instagramUrl, tahunBerdiri } from '@/data/site';
 import './globals.css';
 
 const serif = Fraunces({ subsets: ['latin'], weight: ['500', '600'], style: ['normal', 'italic'], variable: '--font-serif', display: 'swap' });
@@ -58,6 +58,7 @@ const jsonLd = [
     '@id': `${company.url}/#organization`,
     name: company.name,
     alternateName: 'Al Faatih E-Waste',
+    foundingDate: String(tahunBerdiri),
     description: 'Perusahaan penerima dan pengelola limbah elektronik serta aset IT bekas dari perusahaan, dengan layanan penjemputan, penghancuran data, dan dokumentasi resmi.',
     url: `${company.url}/`,
     logo: `${company.url}/logo.png`,

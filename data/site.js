@@ -48,11 +48,13 @@ export const navLinks = [
   { href: '/#faq', label: 'FAQ' },
 ];
 
-// GANTI dengan angka sebenarnya
+// Angka asli (dikonfirmasi pemilik). Tahun pengalaman dihitung otomatis dari tahun berdiri.
+export const tahunBerdiri = 2004;
+export const lamaPengalaman = new Date().getFullYear() - tahunBerdiri;
 export const stats = [
-  { value: 10, suffix: '+', label: 'Tahun pengalaman' },
-  { value: 50000, suffix: '+', label: 'Unit perangkat diproses' },
-  { value: 300, suffix: '+', label: 'Klien korporat' },
+  { value: lamaPengalaman, suffix: '', label: `Tahun pengalaman (sejak ${tahunBerdiri})` },
+  { value: 500, suffix: '+', label: 'Unit perangkat diproses' },
+  { value: 50, suffix: '+', label: 'Klien korporat' },
   { value: 24, suffix: ' Jam', label: 'Siap melayani setiap hari' },
 ];
 

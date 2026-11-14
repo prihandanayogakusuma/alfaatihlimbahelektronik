@@ -1,4 +1,4 @@
-import { company, heroSteps } from '@/data/site';
+import { company, heroSteps, tahunBerdiri } from '@/data/site';
 import HeroSlider from './HeroSlider';
 
 export default function Hero() {
@@ -7,7 +7,7 @@ export default function Hero() {
       <HeroSlider />
       <div className="container hero__inner">
         <div className="hero__content">
-          <p className="eyebrow eyebrow--light">Mitra Pengelolaan E-Waste Korporat</p>
+          <p className="eyebrow eyebrow--light">Mitra Pengelolaan E-Waste Korporat Sejak {tahunBerdiri}</p>
           <h1>
             Limbah Elektronik Perusahaan Anda, <em>Ditangani dengan Penuh Tanggung Jawab.</em>
           </h1>
