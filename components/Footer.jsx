@@ -1,4 +1,4 @@
-import { company, fullAddress, navLinks, serviceAreas, serviceRegion, instagramUrl } from '@/data/site';
+import { company, fullAddress, navLinks, serviceAreas, serviceRegion, instagramUrl, tahunBerdiri } from '@/data/site';
 import { halaman } from '@/data/halaman';
 import { Icon } from './Icons';
 
@@ -12,7 +12,7 @@ export default function Footer() {
             <span className="brand__text"><strong>{company.shortName}</strong><small>{company.tagline}</small></span>
           </a>
           <p className="footer__about">
-            Mitra tepercaya perusahaan dalam pengelolaan limbah elektronik dan aset IT — aman bagi data Anda,
+            {company.name} (Alfaatih), mitra tepercaya perusahaan dalam pengelolaan limbah elektronik dan aset IT sejak {tahunBerdiri} — aman bagi data Anda,
             bertanggung jawab bagi lingkungan.
           </p>
         </div>

@@ -57,7 +57,7 @@ const jsonLd = [
     '@type': 'LocalBusiness',
     '@id': `${company.url}/#organization`,
     name: company.name,
-    alternateName: 'Al Faatih E-Waste',
+    alternateName: ['Alfaatih', 'PT Alfaatih Limbah Elektronik', 'Alfaatih Limbah Elektronik', 'Al Faatih E-Waste'],
     foundingDate: String(tahunBerdiri),
     description: 'Perusahaan penerima dan pengelola limbah elektronik serta aset IT bekas dari perusahaan, dengan layanan penjemputan, penghancuran data, dan dokumentasi resmi.',
     url: `${company.url}/`,
