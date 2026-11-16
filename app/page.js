@@ -15,13 +15,26 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Reveal from '@/components/Reveal';
-import { faqs } from '@/data/site';
+import { company, faqs } from '@/data/site';
 
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-};
+const faqJsonLd = [
+  // Nama situs yang ditampilkan Google di hasil pencarian (menggantikan "Alfaatih.com")
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${company.url}/#website`,
+    name: 'Al Faatih Limbah Elektronik',
+    alternateName: ['Alfaatih', 'PT Al Faatih Limbah Elektronik', 'Alfaatih Limbah Elektronik'],
+    url: `${company.url}/`,
+    inLanguage: 'id-ID',
+    publisher: { '@id': `${company.url}/#organization` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
 
 export default function Home() {
   return (
